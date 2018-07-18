@@ -1,10 +1,10 @@
 <?php
 
-/* Path to pdf files */
-$path = 'pdf_files';
+/* Include the configuration file with the path */
+include_once('config.php');
 
 /* Filter pdf files */
-$files = preg_grep('~\.(pdf)$~', scandir($path));
+$files = preg_grep('~\.(pdf)$~', scandir(PATH));
 
 /* Set column headers */
 $headers = [
@@ -47,7 +47,7 @@ $headers = [
           <?php foreach ($files as $key => $value): ?>
             <td><?php echo $key; ?></td>
             <td><?php echo $value; ?></td>
-            <td> <a  class="btn btn-danger" href="<?php echo $path."/".$value ?>" target="_blank">Preview</a> </td>
+            <td> <a  class="btn btn-danger" href="<?php echo PATH."/".$value ?>" target="_blank">Preview</a> </td>
           </tr>
           <?php endforeach; ?>
         </tbody>
