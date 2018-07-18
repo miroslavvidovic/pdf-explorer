@@ -1,0 +1,47 @@
+/* Search form */
+#searchInput {
+  background-image: url('/images/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+/* Table */
+#fileTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#fileTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#fileTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#fileTable tr.header, #fileTable tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Loding screen */
+#loading {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  background-image: url("/images/loader-128x/Preloader_3.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+}
