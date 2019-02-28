@@ -6,6 +6,9 @@ include_once('config.php');
 /* Filter pdf files */
 $files = preg_grep('~\.(pdf)$~', scandir(PATH));
 
+/* Reset array keys because of .. and . */
+$files = array_values($files);
+
 /* Set column headers */
 $headers = [
   1 => "ID",
